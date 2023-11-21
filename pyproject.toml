@@ -1,0 +1,26 @@
+# pyproject.toml
+
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name="neural-logic-machine"
+version="1.0.0"
+description="A simple implementation of Neural Logic Machines in Pytorch."
+readme="README.md"
+authors = [{ name = "Carlos Núñez Molina", email = "ccaarlos@ugr.es" },
+           { name = "Masataro Asai" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["machine-learning", "statistics", "pytorch", "automated-planning"]
+dependencies = [
+    "torch",
+]
+
+[project.urls]
+Homepage = "https://github.com/TheAeryan/simple-NLM"
