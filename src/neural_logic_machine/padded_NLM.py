@@ -406,8 +406,10 @@ class NLM(nn.Module):
     Main class. It implements an entire NLM composed of several layers.
 
     Constructor parameters:
-        @hidden_features List that contains, for each layer, the number of output predicates for each arity, in ascending order.
+        @hidden_features List that contains, for each intermediate layer, the number of output predicates for each arity, in ascending order.
                          Example: 2 hidden layers, 8 predicates of arities 0-3 -> [[8, 8, 8, 8], [8, 8, 8, 8]]
+                         Note: The reason why we don't need to specify the size of the input NLM layer is due to the use of nn.LazyLinear,
+                               which automatically infers the input size from the first forward pass.
         @out_features List with the number of predicates of each arity for the output layer of the NLM
                      Example: if the NLM only predicts a single nullary predicate -> [1,0,0,0]
         @mlp_hidden_features Units in the hidden layer of all the inference MLPs. If 0, the inference MLPs have no hidden layer.    
