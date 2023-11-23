@@ -1,4 +1,5 @@
 [![PyPI version](https://badge.fury.io/py/neural-logic-machine.svg)](https://badge.fury.io/py/neural-logic-machine)
+[![Downloads](https://static.pepy.tech/badge/neural-logic-machine)](https://pepy.tech/project/neural-logic-machine)
 
 # Simple NLM
 A simple Pytorch implementation of Neural Logic Machines (arxiv.org/abs/1904.11694).
